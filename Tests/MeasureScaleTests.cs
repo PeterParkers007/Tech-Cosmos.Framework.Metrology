@@ -54,7 +54,7 @@ namespace TechCosmos.Metrology.Tests
             }
             finally
             {
-                Object.DestroyImmediate(unit);
+                UnityEngine.Object.DestroyImmediate(unit);
             }
         }
 
@@ -87,9 +87,9 @@ namespace TechCosmos.Metrology.Tests
             }
             finally
             {
-                Object.DestroyImmediate(first);
-                Object.DestroyImmediate(second);
-                Object.DestroyImmediate(other);
+                UnityEngine.Object.DestroyImmediate(first);
+                UnityEngine.Object.DestroyImmediate(second);
+                UnityEngine.Object.DestroyImmediate(other);
             }
         }
 
@@ -107,8 +107,8 @@ namespace TechCosmos.Metrology.Tests
             }
             finally
             {
-                Object.DestroyImmediate(empty);
-                Object.DestroyImmediate(unit);
+                UnityEngine.Object.DestroyImmediate(empty);
+                UnityEngine.Object.DestroyImmediate(unit);
             }
         }
     }
