@@ -90,7 +90,6 @@ Assets/Resources/TechCosmos.Metrology/MeasureCatalog.asset
 ## 代码里怎么用
 
 ```csharp
-using TechCosmos.Metrology.Units;
 using UnityEngine;
 
 public static class RangeExample

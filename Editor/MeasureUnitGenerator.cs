@@ -93,17 +93,14 @@ namespace TechCosmos.Metrology.Editor
             sb.AppendLine("// 由度量衡主控面板生成。比例在同名的单位资源上，不要在这个文件里改数。");
             sb.AppendLine("using TechCosmos.Metrology;");
             sb.AppendLine();
-            sb.AppendLine("namespace TechCosmos.Metrology.Units");
+            sb.AppendLine("/// <summary>项目定义的度量单位。换算读取它自己的全局比例。</summary>");
+            sb.AppendLine($"public static class {unitId}");
             sb.AppendLine("{");
-            sb.AppendLine("    /// <summary>项目定义的度量单位。换算读取它自己的全局比例。</summary>");
-            sb.AppendLine($"    public static class {unitId}");
-            sb.AppendLine("    {");
-            sb.AppendLine($"        public const string UnitId = \"{unitId}\";");
+            sb.AppendLine($"    public const string UnitId = \"{unitId}\";");
             sb.AppendLine();
-            sb.AppendLine("        public static float ToDefined(float editorLength) => MeasureUnits.Require(UnitId).ToDefined(editorLength);");
+            sb.AppendLine("    public static float ToDefined(float editorLength) => MeasureUnits.Require(UnitId).ToDefined(editorLength);");
             sb.AppendLine();
-            sb.AppendLine("        public static float ToEditor(float definedValue) => MeasureUnits.Require(UnitId).ToEditor(definedValue);");
-            sb.AppendLine("    }");
+            sb.AppendLine("    public static float ToEditor(float definedValue) => MeasureUnits.Require(UnitId).ToEditor(definedValue);");
             sb.AppendLine("}");
             return sb.ToString();
         }
