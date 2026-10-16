@@ -1,0 +1,22 @@
+{
+  "name": "com.techcosmos.metrology",
+  "displayName": "度量衡",
+  "version": "1.0.0",
+  "description": "把编辑器长度换成项目自己的单位。每种单位一个类、一份全局比例，在主控面板里改。",
+  "keywords": [
+    "metrology",
+    "measure",
+    "unit",
+    "scale",
+    "distance",
+    "unity"
+  ],
+  "category": "Gameplay",
+  "author": {
+    "name": "Tech-Cosmos",
+    "email": "3427463164@qq.com",
+    "url": "https://github.com/PeterParkers007/Tech-Cosmos"
+  },
+  "unity": "2022.3",
+  "unityRelease": "0f1"
+}
